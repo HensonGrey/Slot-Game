@@ -8,6 +8,7 @@
   },
   "scripts": {
     "spin": "node src/spin.ts",
+    "simulate": "node src/simulate.ts",
     "typecheck": "tsc"
   },
   "devDependencies": {
