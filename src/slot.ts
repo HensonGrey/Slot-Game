@@ -1,25 +1,7 @@
 import { randomInt } from 'node:crypto';
-
-export interface SlotConfig {
-  reelsCount: number;
-  rowsCount: number;
-  symbols: Record<number, number[]>;
-  lines: number[][];
-  reels: number[][];
-}
-
-export interface LineResult {
-  symbol: number;
-  count: number;
-  payout: number;
-}
-
-export interface SpinResult {
-  positions: number[];
-  screen: number[][];
-  lines: LineResult[];
-  totalWin: number;
-}
+import type { LineResult } from './interfaces/line-result.ts';
+import type { SlotConfig } from './interfaces/slot-config.ts';
+import type { SpinResult } from './interfaces/spin-result.ts';
 
 export class Slot {
   private readonly config: SlotConfig;

@@ -1,5 +1,5 @@
-import config from './configuration.ts';
-import { Slot } from './slot.ts';
+import config from '../config/configuration.ts';
+import { Slot } from '../slot.ts';
 
 const DEFAULT_SPINS = 1_000_000;
 // Widening the range by 1.96 SD / √spins on each side makes it 95% likely the real RTP is inside.
@@ -52,4 +52,4 @@ console.log(`Total win:           ${totalWin.toLocaleString('en-US')}`);
 console.log(`RTP:                 ${percent(rtp)} ± ${percent(confidenceRange)}`);
 console.log(`Hit frequency:       ${percent(hitFrequency)} (1 in ${(1 / hitFrequency).toFixed(1)} spins)`);
 console.log(`Standard deviation:  ${standardDeviation.toFixed(2)} bets per spin`);
-console.log(`Largest win:         x${largestWin} (${largestWin / betPerSpin} bets)`);
+console.log(`Largest win:         ${largestWin} credits (${largestWin / betPerSpin}x the bet)`);

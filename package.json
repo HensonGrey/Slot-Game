@@ -7,8 +7,8 @@
     "node": ">=22.18"
   },
   "scripts": {
-    "spin": "node src/spin.ts",
-    "simulate": "node src/simulate.ts",
+    "spin": "node src/scripts/spin.ts",
+    "simulate": "node src/scripts/simulate.ts",
     "typecheck": "tsc"
   },
   "devDependencies": {

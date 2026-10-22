@@ -1,5 +1,5 @@
-import config from './configuration.ts';
-import { Slot } from './slot.ts';
+import config from '../config/configuration.ts';
+import { Slot } from '../slot.ts';
 
 const { positions, screen, lines, totalWin } = new Slot(config).spin();
 
